@@ -9,7 +9,6 @@ pipeline {
     stage('Preflight check') {
       steps {
         sh '''echo \'preflight checking\'
-echo $WORKSPACE
 '''
       }
     }
