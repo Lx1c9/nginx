@@ -1,6 +1,6 @@
 pipeline {
   agent { dockerfile true}
-  stages {
+  
         stage(' Docker Build Test') {
             steps {
                 sh 'echo 'hello world''
@@ -8,8 +8,8 @@ pipeline {
                 
             }
         }
-   }
- }
+   
+ 
   stages {
     stage('Preflight check') {
       steps {
