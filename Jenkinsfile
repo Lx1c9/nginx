@@ -1,10 +1,15 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'dockerfile'
-    }
-
-  }
+  agent { dockerfile true}
+  stages {
+        stage(' Docker Build Test') {
+            steps {
+                sh 'echo 'hello world''
+                sh 'uname -ar'
+                
+            }
+        }
+   }
+ }
   stages {
     stage('Preflight check') {
       steps {
