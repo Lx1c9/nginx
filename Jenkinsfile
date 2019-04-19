@@ -3,7 +3,7 @@ pipeline {
      stages {
 	    stage(' Docker Build Test') {
             steps {
-                sh 'echo 'hello world''
+                sh 'echo "hello world"''
                 sh 'uname -ar'
             }
         }
