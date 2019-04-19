@@ -1,7 +1,7 @@
 pipeline {
   agent { dockerfile true}
   
-        stage(' Docker Build Test') {
+        stages(' Docker Build Test') {
             steps {
                 sh 'echo 'hello world''
                 sh 'uname -ar'
