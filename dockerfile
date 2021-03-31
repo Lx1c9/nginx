@@ -1,4 +1,4 @@
-FROM nginx 
+FROM nginx:1.19.9 
 MAINTAINER dkey
 ENV RUN_USER nginx 
 ENV RUN_GROUP nginx 
